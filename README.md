@@ -9,16 +9,22 @@ Weeks 7-8: Continue NN development
 Weeks 9-10: Overflow
 
 Week 1<br>
-<small>1/5 - 1/11</small>
+<sub><sup>1/5 - 1/11</sub></sup>
 
 Actuator research
 
 Week 2<br>
 <small>1/12 - 1/18</small>
 
+**COMPLETED**
+Purchased actuators (x2) ETA 1/20
+Contacted manf. for part model, received .STEP 1/15
+Installed VM + Solidworks 1/16
+
 
 Week 3<br>
 <small>1/19 - 1/25</small>
+
 
 
 Week 4<br>
