@@ -1,11 +1,4 @@
-# 499
-
-### Weeks 1-2: Determine which actuators to use, order actuators
-Find EMG sensor, either on hand or order If on hand, begin building dataset Begin design of apparatus based on dimensions of actuators ordered
-### Weeks 3-4: Assembly, redesign if necessary (probably necessary)
-Begin/continue EMG dataset Write crude controller
-### Weeks 5-6: Finish assembly Finish controller Start NN controller
-### Weeks 7-8: Continue NN development
+# 499 - Winter Project
 
 ### Week 1<br>
 <sup>1/5 - 1/11</sup>
@@ -16,13 +9,13 @@ Actuator research
 <sup>1/12 - 1/18</sup>
 
 **COMPLETED**<br>
-Purchased actuators (x2) ETA 1/20
-Contacted manf. for part model, received .STEP 1/15
-Installed VM + Solidworks 1/16
-Initial sketch & math
+* Purchased actuators (x2) ETA 1/20
+* Contacted manf. for part model, received .STEP 1/15
+* Installed VM + Solidworks 1/16
+* Initial sketch & math
 
 **TO DO**<br>
-Begin CAD model
+* Begin CAD model
 
 ### Week 3<br>
 <sup>1/19 - 1/25</sup>
@@ -35,11 +28,18 @@ Begin CAD model
 Test actuator
 Continue CAD model
 
+###### Reach
+design elbow angle detector
+
+
 ### Week 5<br>
 <sup>1/2 - 2/8</sup>
 
 Refine CAD model
 Begin prototype
+
+###### Reach
+collect EMG data from myo
 
 ### Week 6<br>
 <sup>1/9 - 2/15</sup>
