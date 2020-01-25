@@ -20,7 +20,19 @@ Actuator research
 ### Week 3<br>
 <sup>1/19 - 1/25</sup>
 
-*** Test actuator ***
+**GOAL**
+* Test actuator
+* Begin CAD model
+
+**COMPLETED**
+* Test Actuator
+* Initial CAD model
+
+**IN PROGRESS**
+* Refining CAD Model
+
+**TO DO**
+* Test 2 actuators
 
 ### Week 4<br>
 <sup>1/26 - 2/1</sup>
