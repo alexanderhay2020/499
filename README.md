@@ -37,8 +37,16 @@ Actuator research
 ### Week 4<br>
 <sup>1/26 - 2/1</sup>
 
-Test actuator
-Continue CAD model
+**GOAL**
+* Test actuator
+* Continue CAD model
+
+**COMPLETED**
+* Ordering
+
+**IN PROGRESS**
+* Refining CAD Model
+* Testing
 
 ###### Reach
 design elbow angle detector
