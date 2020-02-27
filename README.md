@@ -81,6 +81,7 @@ note: EMG aspect scraped
 **COMPLETED**
  * Bearing install
  * Shaft install
+ * Replaced rotary encoder (ordered wrong one)
 
  **IN PROGRESS**
  * Shaft collar design
@@ -102,6 +103,7 @@ note: EMG aspect scraped
 **IN PROGRESS**
 * Power Supply
 * Actuator/Collar connection
+* Replace rotary encoder (digikey mislabeled)
 
 ### Week 8<br>
 <sup>2/23 - 2/29</sup>
@@ -117,6 +119,7 @@ note: EMG aspect scraped
 
 **IN PROGRESS**
 * Actuator/Collar connection
+* Rotary encoder redesign
 
 ### Week 10<br>
 <sup>3/1 - 3/7</sup>
