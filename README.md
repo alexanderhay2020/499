@@ -62,28 +62,28 @@ Begin prototype
 collect EMG data from myo
 
 ### Week 6<br>
-<sup>1/9 - 2/15</sup>
+<sup>2/9 - 2/15</sup>
 
 Continue building prototype
 
 ### Week 7<br>
-<sup>1/16 - 2/22</sup>
+<sup>2/16 - 2/22</sup>
 
 
 ### Week 8<br>
-<sup>1/23 - 2/29</sup>
+<sup>2/23 - 2/29</sup>
 
 
 ### Week 10<br>
-<sup>1/1 - 3/7</sup>
+<sup>3/1 - 3/7</sup>
 
 
 ### Week 11<br>
-<sup>1/8 - 3/14</sup>
+<sup>3/8 - 3/14</sup>
 
 Overflow
 
 ### Week 12<br>
-<sup>1/15 - 3/21</sup>
+<sup>3/15 - 3/21</sup>
 
 Finals

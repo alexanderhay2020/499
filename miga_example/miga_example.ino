@@ -1,6 +1,6 @@
 // Initial Variable Declarations
 int motorPin = 8;       // motor control
-int potPin = 2;         // analog input
+int potPin = A2;         // analog input
 int val = 0;            // serial reading
 int potBuffer = 10;     // pot reading buffer
 int reps = 0;           // cycles completed
@@ -9,6 +9,7 @@ long time = 0;          // current time
 int dist = 150;         // desired travel distance (Calibrated)
 int initPot = 0;        // initial pot value
 int thresh = 0;         // pot value threshold
+
 
 void setup() {
   // Pin setup
