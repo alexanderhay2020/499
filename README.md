@@ -53,6 +53,7 @@ design elbow angle detector
 
 ### Week 5<br>
 <sup>2/2 - 2/8</sup>
+
 **GOAL**
 * Research rotary encoders
 * CAD redesign for laser cutter
@@ -106,12 +107,16 @@ note: EMG aspect scraped
 <sup>2/23 - 2/29</sup>
 
 **GOAL**
-Create Circuit Diagram
-Find Power Supply
+ * Create Circuit Diagram
+ * Find Power Supply
+ * Update github/portfolio
 
 **COMPLETED**
-Circuit Diagram
-Ordered Power Supply
+ * Circuit Diagram
+ * Ordered Power Supply
+
+**IN PROGRESS**
+* Actuator/Collar connection
 
 ### Week 10<br>
 <sup>3/1 - 3/7</sup>
