@@ -51,12 +51,19 @@ Actuator research
 ###### Reach
 design elbow angle detector
 
-
 ### Week 5<br>
-<sup>1/2 - 2/8</sup>
+<sup>2/2 - 2/8</sup>
+**GOAL**
+* Research rotary encoders
+* CAD redesign for laser cutter
+* Laser cutter training
 
-Refine CAD model
-Begin prototype
+**COMPLETED**
+* Ordered rotary encoder
+* Laser cutter training
+
+**IN PROGRESS**
+* Mechanical design - elbow
 
 ###### Reach
 collect EMG data from myo
@@ -64,15 +71,47 @@ collect EMG data from myo
 ### Week 6<br>
 <sup>2/9 - 2/15</sup>
 
-Continue building prototype
+note: EMG aspect scraped
+
+**GOAL**
+ * GET IT TO MOVE
+ * Fix shorting issue
+
+**COMPLETED**
+ * Bearing install
+ * Shaft install
+
+ **IN PROGRESS**
+ * Shaft collar design
+ * Actuator/Collar connection
+ * Lengthen frame to fit bicep/brac
 
 ### Week 7<br>
 <sup>2/16 - 2/22</sup>
 
+**GOAL**
+ * Get it to move
+
+**COMPLETED**
+ * Frame lengthened
+ * Hardware replaced to accommodate new material & manf. process
+ * Replaced washers with plastic spacers (shorting issue)
+ * Got it to move
+
+**IN PROGRESS**
+* Power Supply
+* Actuator/Collar connection
 
 ### Week 8<br>
 <sup>2/23 - 2/29</sup>
 
+**GOAL**
+Create Circuit Diagram
+Find Power Supply
+
+**COMPLETED**
+Circuit Diagram
+Ordered Power Supply
 
 ### Week 10<br>
 <sup>3/1 - 3/7</sup>
