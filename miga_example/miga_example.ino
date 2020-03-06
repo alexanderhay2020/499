@@ -9,12 +9,13 @@ long time = 0;          // current time
 int dist = 150;         // desired travel distance (Calibrated)
 int initPot = 0;        // initial pot value
 int thresh = 0;         // pot value threshold
-
+int val2 = 0;
 
 void setup() {
   // Pin setup
   pinMode(motorPin, OUTPUT);
   pinMode(potPin, INPUT);
+  val2 = 1;
 
   // Begin serial communication
   Serial.begin(9600);
@@ -23,7 +24,7 @@ void setup() {
 
 void loop() {
   // Initialization
-  initPot = analogRead(potPin);
+  initPot = val2;
   thresh = initPot + dist;
   startTime = millis();
 
@@ -32,7 +33,7 @@ void loop() {
 
   // Wait unit threshold is reached
   while (val < thresh){
-    val = analogRead(potPin);
+    val = val2;
     time = millis() - startTime;
   }
 
@@ -41,7 +42,7 @@ void loop() {
 
   // Wait until actuator reaches initial position (+ buffer)
   while (val > (initPot + potBuffer)){
-    val = analogRead(potPin);
+    val = val2;
   }
 
   // Increment Cycles
