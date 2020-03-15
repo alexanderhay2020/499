@@ -2,7 +2,7 @@
 
 ## Timeline of Project
 <p>
-    <center><img src="schedule.png" width="100%;" height="100%;" alt/></center>
+    <center><img src="/assets/schedule.png" width="100%;" height="100%;" alt/></center>
 </p>
 
 ## Scope
@@ -15,7 +15,7 @@ The goal of this project was to explore the use of shape memory alloys (SMA) to 
 The Miga T220 SMA linear actuator was chosen for this project. Other considerations included servo motors, magnetic actuators, belt/gear mechanical actuators, pneumatic systems, and other SMA actuators. Form, power, and hardware interface were the driving deciding factors. A decision matrix can be found [here](https://docs.google.com/spreadsheets/d/1p3fjq4K-Gl2H-Soi13WV8KOYeHxsrkHLGmXQxgn4opM/edit?usp=sharing)
 
 <p>
-    <img src="/miga.jpg" width="50%;" height="50%;" alt/>
+    <center><img src="/assets/miga.jpg" width="50%;" height="50%;" alt/></center>
     <br>
     <em> Miga T220 SMA Linear Actuator</em>
 </p>
@@ -26,7 +26,7 @@ Solidworks was used for modeling and assembly. .stl files can be found [here](ht
 1/4" bearings were press fit into the holes after a bit of sanding. Fans are mounted to their respective sides, making sure the fan pushed air over the actuator. Likewise, the actuators were screwed into the middle bracket using plastic spacers.
 
 <p>
-    <img src="/assets/img/Figure_3-1.jpg" width="50%;" height="50%;" alt/>
+    <center><img src="/assets/assembly.gif" width="50%;" height="50%;" alt/></center>
     <br>
     <em>Apparatus exploded view</em>
 </p>
