@@ -34,12 +34,12 @@ Solidworks was used for modeling and assembly. .stl files can be found [here](ht
 
 A 1/4" shaft was placed through the bearings with two (2) collars placed on the shaft, one on the outside of each bearing bracket. Another collar was placed in the center, between the bearing brackets. 3D printed screws were connected to the actuators and collars with a high strength nylon filament. A turnbuckle mechanism was used to maintain tension in the system. The apparatus is only designed to work in tension reflecting how our own muscles are structured.
 
-The Ultimaker3 3D printer was used to make the shaft collars and the special screws needed for the turnbuckle assembly. A full BOM can be found [here](url)
+The Ultimaker3 3D printer was used to make the shaft collars and the special screws needed for the turnbuckle assembly. A full BOM can be found [here](https://docs.google.com/spreadsheets/d/1KzUj851-XKCJ2QYp6Q05hCkz7jHLwCAjlV-5XQmAJzQ/edit?usp=sharing)
 
 ### Electronics
 An Arduino UNO was used to interface with the actuators and fans. The actuators require analog/PWM pins, the fans require digital I/O pins.
 
-Each actuator operates nominally at 9v<sup>[[3]](http://www.migamotors.com/Media/Miga-T220-Data-Sheet-102218.pdf)</sup> at 0.3A. Each fan requires 5v 0.2A. The UNO requires 5.5v to operate drawing minimal current. A 9V 2A power supply was used to power the components.
+Each actuator operates nominally at 9v at 0.3A<sup>[[3]](http://www.migamotors.com/Media/Miga-T220-Data-Sheet-102218.pdf)</sup>. Each fan requires 5v 0.2A. The UNO requires 5.5v to operate drawing minimal current. A 9V 2A power supply was used to power the components.
 
 ## Code
 
@@ -71,6 +71,11 @@ flex(tricep);
 relax(bicep);
 delay(5000);
 ```
+
+## Future work
+
+The project as presented demonstrates an α-model method of motor control through changing the Nitinol wire properties. λ-model requires a feedback signal from the muscle spindle, a fiber running the length of the muscle that senses stretch sensory information. A λ-model could be modeled by installing a position sensor on the actuator or a rotary encoder at the joint, sending the muscle property data that the muscle spindle broadcasts. A PID controller could then be implemented to give the actuators a spring-like quality that is seen in muscle fibers<sup>[[3]](https://www.ncbi.nlm.nih.gov/pubmed/8930238)</sup>.
+
 ## References
 
 [1] Anatol G. Feldman (1986) Once More on the Equilibrium-Point Hypothesis (λ Model) for Motor Control, Journal of Motor Behavior, 18:1, 17-54, DOI: 10.1080/00222895.1986.10735369
