@@ -2,7 +2,7 @@
 
 ## Timeline of Project
 <p>
-    <center><img src="/assets/img/winter_project/schedule.png" width="100%;" height="100%;" alt/></center>
+    <center><img src="schedule.png" width="100%;" height="100%;" alt/></center>
 </p>
 
 ## Scope
