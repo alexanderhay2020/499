@@ -15,9 +15,9 @@ The goal of this project was to explore the use of shape memory alloys (SMA) to 
 The Miga T220 SMA linear actuator was chosen for this project. Other considerations included servo motors, magnetic actuators, belt/gear mechanical actuators, pneumatic systems, and other SMA actuators. Form, power, and hardware interface were the driving deciding factors. A decision matrix can be found [here](https://docs.google.com/spreadsheets/d/1p3fjq4K-Gl2H-Soi13WV8KOYeHxsrkHLGmXQxgn4opM/edit?usp=sharing)
 
 <p>
-    <center><img src="/assets/miga.jpg" width="50%;" height="50%;" alt/>
+    <center><img src="/assets/mige.jpg" width="50%;" height="50%;" alt/>
     <br>
-    <em> Miga T220 SMA Linear Actuator</em></center>
+    <em>Miga T220 SMA Linear Actuator</em></center>
 </p>
 
 ### Assembly
