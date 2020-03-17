@@ -39,7 +39,7 @@ A 1/4" shaft was placed through the bearings with two (2) collars placed on the 
 The Ultimaker3 3D printer was used to make the shaft collars and the special screws needed for the turnbuckle assembly. A full BOM can be found [here](https://docs.google.com/spreadsheets/d/1KzUj851-XKCJ2QYp6Q05hCkz7jHLwCAjlV-5XQmAJzQ/edit?usp=sharing)
 
 <p>
-    <img src="/assets/img/winter_project/img01.jpg" width="80%;" height="80%;" alt/>
+    <img src="/assets/img/img01.jpg" width="80%;" height="80%;" alt/>
     <br>
     <em>Complete assembly of project</em>
 </p>
