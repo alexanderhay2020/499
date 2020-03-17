@@ -15,7 +15,7 @@ The goal of this project was to explore the use of shape memory alloys (SMA) to 
 For this project I've chosen the Miga T220 SMA linear actuator. Actuation parallels human muscle; the Nitinol wire contracts when a current is passed through, just as muscles contract when activated by a neuron. Each actuator has a fan installed to increase how quickly the wire could relax. The T220 also has an onboard MOSFET switching and protection circuit, which cuts power to SMA wire when the output stage reached the End-of-Stroke contact.
 
 <p>
-    <img src="/assets/img/Figure_3-3.jpg" width="50%;" height="50%;" alt/><img src="/assets/img/winter_project/circuit_mosfet.png" width="50%;" height="50%;" alt/>
+    <img src="/assets/miga.jpg" width="50%;" height="50%;" alt/><img src="/assets/circuit_mosfet.png" width="50%;" height="50%;" alt/>
     <br>
     <em>left: Miga T220 SMA Linear Actuator, right: power protection circuit</em>
 </p>
@@ -32,7 +32,7 @@ I choose the following design parameters for the project:
 The max length was determined as the average length of a male arm, measured from the shoulder to the elbow. The range of motion was a compromise between human ability (~150 degrees) and the mechanics of the system. Since the actuator has a very short throw they needed to be anchored to the "elbow" at very small distances to achieve any decent range of motion. To achieve 90 degrees the anchor point would need a radius of 4mm. For reference, a 1/4" shaft is 6.35mm (radius 3.175mm).
 
 <p>
-    <img src="/assets/chart1/png" width="50%;" height="50%;" alt/>
+    <img src="/assets/chart1.png" width="50%;" height="50%;" alt/>
     <br>
     <em>chart shows relation between range of motion and actuator anchor distance</em>
 </p>
