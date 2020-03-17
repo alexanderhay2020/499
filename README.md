@@ -20,6 +20,22 @@ For this project I've chosen the Miga T220 SMA linear actuator. Actuation parall
     <em>left: Miga T220 SMA Linear Actuator, right: power protection circuit</em>
 </p>
 
+### Design
+
+I choose the following design parameters for the project:
+
+* Apparatus has a max length of 369mm<sup>[3]</sup>
+* Minimum range of motion of 45 degrees
+* Tricep, bicep, and branchialis muscles must be modeled
+* Equilibrium point control model
+
+The max length was determined as the average length of a male arm, measured from the shoulder to the elbow. The range of motion was a compromise between human ability (~150 degrees) and the mechanics of the system. Since the actuator has a very short throw they needed to be anchored to the "elbow" at very small distances to achieve any decent range of motion. To achieve 90 degrees the anchor point would need a radius of 4mm. For reference, a 1/4" shaft is 6.35mm (radius 3.175mm).
+
+<p>
+    <img src="/assets/chart1/png" width="50%;" height="50%;" alt/>
+    <br>
+    <em>chart shows relation between range of motion and actuator anchor distance</em>
+</p>
 
 ### Assembly
 Solidworks was used for modeling and assembly. .stl files can be found [here](https://drive.google.com/drive/folders/16_4EUu6pd2tG_H0EAVOFKAJVKnEg8ENC?usp=sharing). The frame is made from six (6) pieces made from acrylic or plywood.
@@ -46,7 +62,7 @@ The Ultimaker3 3D printer was used to make the shaft collars and the special scr
 ### Electronics
 An Arduino UNO was used to interface with the actuators and fans. The actuators require analog/PWM pins, the fans require digital I/O pins.
 
-Each actuator operates nominally at 9v at 0.3A<sup>[[3]](http://www.migamotors.com/Media/Miga-T220-Data-Sheet-102218.pdf)</sup>. Each fan requires 5v 0.2A. The UNO requires 5.5v to operate drawing minimal current. A 9V 2A power supply was used to power the components.
+Each actuator operates nominally at 9v at 0.3A<sup>[[4]](http://www.migamotors.com/Media/Miga-T220-Data-Sheet-102218.pdf)</sup>. Each fan requires 5v 0.2A. The UNO requires 5.5v to operate drawing minimal current. A 9V 2A power supply was used to power the components.
 
 ## Code
 
@@ -81,7 +97,7 @@ delay(5000);
 
 ## Future work
 
-The project as presented demonstrates an α-model method of motor control through changing the Nitinol wire properties. λ-model requires a feedback signal from the muscle spindle, a fiber running the length of the muscle that senses stretch sensory information. A λ-model could be modeled by installing a position sensor on the actuator or a rotary encoder at the joint, sending the muscle property data that the muscle spindle broadcasts. A PID controller could then be implemented to give the actuators a spring-like quality that is seen in muscle fibers<sup>[[3]](https://www.ncbi.nlm.nih.gov/pubmed/8930238)</sup>.
+The project as presented demonstrates an α-model method of motor control through changing the Nitinol wire properties. λ-model requires a feedback signal from the muscle spindle, a fiber running the length of the muscle that senses stretch sensory information. A λ-model could be modeled by installing a position sensor on the actuator or a rotary encoder at the joint, sending the muscle property data that the muscle spindle broadcasts. A PID controller could then be implemented to give the actuators a spring-like quality that is seen in muscle fibers<sup>[[5]](https://www.ncbi.nlm.nih.gov/pubmed/8930238)</sup>.
 
 ## References
 
@@ -89,6 +105,8 @@ The project as presented demonstrates an α-model method of motor control throug
 
 [2] Hinder, Mark R, and Theodore E Milner. “The case for an internal dynamics model versus equilibrium point control in human movement.” The Journal of physiology vol. 549,Pt 3 (2003): 953-63. doi:10.1113/jphysiol.2002.033845
 
-[3] “Miga T220 Data Sheet.” Miga Motor Company, Silverton, OR, 22 Oct. 2018.
+[3] Gordon, Claire & Churchill, Thomas & Clauser, Charles & Bradtmiller, Bruce & McConville, John & Tebbetts, Ilse & Walker, Robert. (1989). Anthropometric Survey of U.S. Army Personnel: Summary Statistics, Interim Report for 1988.
 
-[4] Gribble PL, Ostry DJ. Origins of the power law relation between movement velocity and curvature: modeling the effects of muscle mechanics and limb dynamics. J Neurophysiol. 1996 Nov;76(5):2853-60. doi: 10.1152/jn.1996.76.5.2853. PubMed PMID: 8930238.
+[4] “Miga T220 Data Sheet.” Miga Motor Company, Silverton, OR, 22 Oct. 2018.
+
+[5] Gribble PL, Ostry DJ. Origins of the power law relation between movement velocity and curvature: modeling the effects of muscle mechanics and limb dynamics. J Neurophysiol. 1996 Nov;76(5):2853-60. doi: 10.1152/jn.1996.76.5.2853. PubMed PMID: 8930238.
