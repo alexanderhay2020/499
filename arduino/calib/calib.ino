@@ -4,7 +4,7 @@ void setup() {
   int pin = 10;
   Serial.begin(9600);
   pinMode(pin, OUTPUT);
-  analogWrite(pin, 10); //1023 max
+  analogWrite(pin, 8); //1023 max
 
 
 }

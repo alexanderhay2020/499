@@ -15,9 +15,11 @@ The goal of this project was to explore the use of shape memory alloys (SMA) to 
 The Miga T220 SMA linear actuator was chosen for this project. Other considerations included servo motors, magnetic actuators, belt/gear mechanical actuators, pneumatic systems, and other SMA actuators. Form, power, and hardware interface were the driving deciding factors. A decision matrix can be found [here](https://docs.google.com/spreadsheets/d/1p3fjq4K-Gl2H-Soi13WV8KOYeHxsrkHLGmXQxgn4opM/edit?usp=sharing)
 
 <p>
-    <center><img src="/assets/miga.jpg" width="50%;" height="50%;" alt/>
+    <center>
+    <img src="/assets/miga.jpg" width="50%;" height="50%;" alt/>
     <br>
-    <em>Miga T220 SMA Linear Actuator</em></center>
+    <em>Miga T220 SMA Linear Actuator</em>
+    </center>
 </p>
 
 ### Assembly
@@ -35,6 +37,12 @@ Solidworks was used for modeling and assembly. .stl files can be found [here](ht
 A 1/4" shaft was placed through the bearings with two (2) collars placed on the shaft, one on the outside of each bearing bracket. Another collar was placed in the center, between the bearing brackets. 3D printed screws were connected to the actuators and collars with a high strength nylon filament. A turnbuckle mechanism was used to maintain tension in the system. The apparatus is only designed to work in tension reflecting how our own muscles are structured.
 
 The Ultimaker3 3D printer was used to make the shaft collars and the special screws needed for the turnbuckle assembly. A full BOM can be found [here](https://docs.google.com/spreadsheets/d/1KzUj851-XKCJ2QYp6Q05hCkz7jHLwCAjlV-5XQmAJzQ/edit?usp=sharing)
+
+<p>
+    <img src="/assets/img/winter_project/img01.jpg" width="80%;" height="80%;" alt/>
+    <br>
+    <em>Complete assembly of project</em>
+</p>
 
 ### Electronics
 An Arduino UNO was used to interface with the actuators and fans. The actuators require analog/PWM pins, the fans require digital I/O pins.
