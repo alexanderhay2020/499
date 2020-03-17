@@ -12,14 +12,12 @@ The goal of this project was to explore the use of shape memory alloys (SMA) to 
 ## Apparatus
 
 ### Actuator
-The Miga T220 SMA linear actuator was chosen for this project. Other considerations included servo motors, magnetic actuators, belt/gear mechanical actuators, pneumatic systems, and other SMA actuators. Form, power, and hardware interface were the driving deciding factors. A decision matrix can be found [here](https://docs.google.com/spreadsheets/d/1p3fjq4K-Gl2H-Soi13WV8KOYeHxsrkHLGmXQxgn4opM/edit?usp=sharing)
+For this project I've chosen the Miga T220 SMA linear actuator. Actuation parallels human muscle; the Nitinol wire contracts when a current is passed through, just as muscles contract when activated by a neuron. Each actuator has a fan installed to increase how quickly the wire could relax. The T220 also has an onboard MOSFET switching and protection circuit, which cuts power to SMA wire when the output stage reached the End-of-Stroke contact.
 
 <p>
-    <center>
-    <img src="/assets/miga.jpg" width="50%;" height="50%;" alt/>
+    <img src="/assets/img/Figure_3-3.jpg" width="50%;" height="50%;" alt/><img src="/assets/img/winter_project/circuit_mosfet.png" width="50%;" height="50%;" alt/>
     <br>
-    <em>Miga T220 SMA Linear Actuator</em>
-    </center>
+    <em>left: Miga T220 SMA Linear Actuator, right: power protection circuit</em>
 </p>
 
 ### Assembly
