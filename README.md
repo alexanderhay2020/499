@@ -20,6 +20,7 @@ For this project I've chosen the Miga T220 SMA linear actuator. Actuation parall
     <em>left: Miga T220 SMA Linear Actuator, right: power protection circuit</em>
 </p>
 
+
 ### Assembly
 Solidworks was used for modeling and assembly. .stl files can be found [here](https://drive.google.com/drive/folders/16_4EUu6pd2tG_H0EAVOFKAJVKnEg8ENC?usp=sharing). The frame is made from six (6) pieces made from acrylic or plywood.
 
