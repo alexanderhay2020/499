@@ -9,6 +9,18 @@ typedef struct {
 void flex(Muscle);
 void relax(Muscle);
 
+
+void flex(Muscle m){
+  analogWrite(m.actPin, 1023);
+  digitalWrite(m.fanPin, HIGH);
+}
+
+void relax(Muscle m){
+ analogWrite(m.actPin, 0);
+ digitalWrite(m.fanPin, LOW);
+}
+
+
 void setup() {
 
   // Begin serial communication
@@ -38,23 +50,23 @@ void setup() {
   // delay(1000);
   // relax(bicep);
   Serial.println("Initialization Complete");
-}
 
-void flex(Muscle m){
-  analogWrite(m.actPin, 1023);
-  digitalWrtie(m.fanPin, HIGH)
-}
-
-void relax(Muscle m){
- analogWrite(m.actPin, 0);
- digitalWrite(m.fanPin, LOW);
-}
-
-
-void loop(){
+  while(1){
   flex(tricep);
   relax(bicep);
   delay(5000);
   relax(tricep);
   flex(bicep);
+  delay(5000);
+  }
+}
+
+
+void loop(){
+//  flex(tricep);
+//  relax(bicep);
+//  delay(5000);
+//  relax(tricep);
+//  flex(bicep);
+//  delay(5000);
 }
