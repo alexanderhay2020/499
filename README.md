@@ -53,7 +53,7 @@ Solidworks was used for modeling and assembly. .stl files can be found [here](ht
 </p>
 
 
-A 1/4" shaft was placed through the bearings with two (2) collars placed on the shaft, one on the outside of each bearing bracket. Another collar was placed in the center, between the bearing brackets. 3D printed screws were connected to the actuators and collars with a high strength nylon filament. A turnbuckle mechanism was used to maintain tension in the system. The apparatus is only designed to work in tension reflecting how our own muscles are structured.
+A 1/4" shaft was placed through the bearings with two (2) collars placed on the shaft, one on the outside of each bearing bracket. Another collar was placed in the center, between the bearing brackets. 3D printed hollow screws were connected to the actuators and collars with a high strength nylon filament. A turnbuckle mechanism was used to maintain tension in the system. The apparatus is only designed to work in tension reflecting how our own muscles are structured.
 
 The Ultimaker3 3D printer was used to make the shaft collars and the special screws needed for the turnbuckle assembly. A full BOM can be found [here](https://docs.google.com/spreadsheets/d/1KzUj851-XKCJ2QYp6Q05hCkz7jHLwCAjlV-5XQmAJzQ/edit?usp=sharing)
 
