@@ -32,10 +32,14 @@ I choose the following design parameters for the project:
 The max length was determined as the average length of a male arm, measured from the shoulder to the elbow. The range of motion was a compromise between human ability (~150 degrees) and the mechanics of the system. Since the actuator has a very short throw they needed to be anchored to the "elbow" at very small distances to achieve any decent range of motion. To achieve 90 degrees the anchor point would need a radius of 4mm. For reference, a 1/4" shaft is 6.35mm (radius 3.175mm).
 
 <p>
-    <img src="/assets/chart1.png" width="50%;" height="50%;" alt/>
+    <img src="/assets/chart1.png" width="70%;" height="70%;" alt/>
     <br>
     <em>chart shows relation between range of motion and actuator anchor distance</em>
 </p>
+
+Originally the project was to include modeling of all the major muscles in the arm; tricep, bicep, and brachialis. This was scraped towards the end for the presentation at the Museum of Science and Industry, the primary reasons being actuation speed, performance, and complexity. Stacking actuators is also a concern due to the fact that the mounting holes are part of the circuit and require plastic hardware. Limiting to two actuators simplifies the overall design and allows the fans the blow across more surface area, allowing the Nitinol wires to cool faster increasing actuation rate.
+
+Equilibrium point control is an intuitive method of motor control proposed by Feldman, with the λ-model published in 1986. Motion of the joint is instigated by the reciprocal command, "which alters the relative activation of agonist and antagonist muscles to produce a shift in the equilibrium between the muscle force and external load"<sup>[[2]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2342993/)</sup>
 
 ### Assembly
 Solidworks was used for modeling and assembly. .stl files can be found [here](https://drive.google.com/drive/folders/16_4EUu6pd2tG_H0EAVOFKAJVKnEg8ENC?usp=sharing). The frame is made from six (6) pieces made from acrylic or plywood.
