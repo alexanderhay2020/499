@@ -15,6 +15,10 @@ void wait(float time){
     
 }
 
+void convert(){
+    
+}
+
 void draw_box(){
     
     int i = 0;
@@ -50,9 +54,41 @@ void draw_box(){
     drawString(20,23,indicator_msg);
 }
 
+
+void adcConfigureAutoScan(unsigned adcPINS, unsigned numPins){
+    AD1CON1 = 0x0000; // disable ADC
+ 
+    // AD1CON1<2>, ASAM    : Sampling begins immediately after last conversion completes
+    // AD1CON1<7:5>, SSRC  : Internal counter ends sampling and starts conversion (auto convert)
+    AD1CON1SET = 0x00e4;
+ 
+    // AD1CON2<1>, BUFM    : Buffer configured as two 8-word buffers, ADC1BUF7-ADC1BUF0, ADC1BUFF-ADCBUF8
+    // AD1CON2<10>, CSCNA  : Scan inputs
+//    AD1CON2 = 0x0402;
+    AD1CON2bits.BUFM = 1;
+//    AD1CON2bits.CSCNA = 1; //<- this breaks it
+ 
+    // AD2CON2<5:2>, SMPI  : Interrupt flag set at after numPins completed conversions
+    AD1CON2SET = (numPins-1) << 2;
+ 
+    // AD1CON3<7:0>, ADCS  : TAD = TPB * 2 * (ADCS<7:0> + 1) = 4 * TPB in this example
+    // AD1CON3<12:8>, SAMC : Acquisition time = AD1CON3<12:8> * TAD = 15 * TAD in this example
+    AD1CON3 = 0x0f01;
+ 
+    // AD1CHS is ignored in scan mode
+    AD1CHS = 0;
+ 
+    // select which pins to use for scan mode
+    AD1CSSL = adcPINS;
+    AD1CON1bits.ON = 1;
+}
+
+
 int main() {
 
     init_pic();
+    adcConfigureAutoScan(0x0008, 1);
+//    AD1CON1SET = 0x8000;                // start ADC
 //    init_i2c();
     ssd1306_setup();
 //    ssd1306_clear();
@@ -68,6 +104,9 @@ int main() {
     char indicator_msg[10];
     char pressure_msg[20];
 
+    int an1 = 0;
+
+    
     while (1) {
         // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
         // remember the core timer runs at half the sysclk
@@ -91,9 +130,21 @@ int main() {
         while(_CP0_GET_COUNT() < 24000000/2){}
 
         draw_box();
+        
 
-        int val = read_adc(14);
-        sprintf(pressure_msg, "PSI VOLTAGE: %d", val);
+        while( ! IFS0bits.AD1IF);       // wait until buffers contain new samples
+        AD1CON1bits.ASAM = 0;           // stop automatic sampling (essentially shut down ADC in this mode)
+
+        if( AD1CON2bits.BUFS == 1){     // check which buffers are being written to and read from the other set
+            an1 = ADC1BUF0;
+        }
+        else{
+            an1 = ADC1BUF8;
+        }
+        AD1CON1bits.ASAM = 1;           // restart automatic sampling
+        IFS0CLR = 0x10000000;           // clear ADC interrupt flag
+
+        sprintf(pressure_msg, "Pressure (PSI): %d", an1);
         drawString(0,0,pressure_msg); 
         ssd1306_update();
     }
